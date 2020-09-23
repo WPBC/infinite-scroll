@@ -72,7 +72,7 @@ async function getPhotos() {
 // Check to see if scroll bar near bottom of page, then load more photos
 window.addEventListener('scroll', () => {
     const { scrollTop, scrollHeight, clientHeight } = document.documentElement;
-    if (clientHeight + scrollTop >= scrollHeight - 100 && ready) {
+    if (clientHeight + scrollTop >= scrollHeight - 1000 && ready) {
         ready = false;
         getPhotos();
     }

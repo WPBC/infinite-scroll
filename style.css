@@ -34,7 +34,7 @@ header {
     text-transform: uppercase;
 }
 header h1 {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     margin: 25px 10px;
 }
 
@@ -42,33 +42,35 @@ header h1 {
 .image-container {
     margin-left: 10px;
     margin-right: 10px;
-    columns: 1;
-    column-gap: 10px;
 }
 .image-container img {
     width: 100%;
     margin-bottom: 5px;
+    border-radius: 5px;
+    transition: 300ms;
+}
+.image-container img:hover {
+    transform: scale(101.5%);
 }
 
 /* Media Query: Tablet & Larger */
 @media screen and (min-width: 600px) {
-    h1 {
+    header h1 {
         font-size: 1.7rem;
     }
     .image-container {
-        margin-left: 30px;
-        margin-right: 30px;
-        columns: 2;
+        margin-left: 15%;
+        margin-right: 15%;
     }
 }
 
 /* Media Query: Desktop & Larger */
 @media screen and (min-width: 992px) {
-    h1 {
+    header h1 {
         font-size: 1.9rem;
     }
     .image-container {
-        margin-left: 20%;
-        margin-right: 20%;
+        margin-left: 25%;
+        margin-right: 25%;
     }
 }
